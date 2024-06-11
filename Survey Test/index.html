@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SurveyJP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1 id="title">Ju Árvores de Natal</h1>
+      <p id="description">
+        Enquanto não é natal, venha já agendar sua decoração
+      </p>
+      <form id="survey-form" action="">
+        <fieldset>
+          <label for="name-label"
+            >Nome<input
+              class="full"
+              id="name-label"
+              type="text"
+              placeholder="Maria da Silva"
+              required
+          /></label>
+          <label for="email-label"
+            >Email<input
+              class="full"
+              id="email-label"
+              type="email"
+              placeholder="mariasilva@gmail.com"
+              required
+          /></label>
+          <label for="number-label"
+            >Idade(opcional)<input
+              class="full"
+              id="number-label"
+              min="13"
+              max="115"
+              placeholder="27"
+              type="number"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">
+            <legend>Como conheceu a loja?</legend>
+            <select name="dropdown" id="dropdown">
+              Role
+              <option value="0">Selecione a forma</option>
+              <option value="1">Instagram</option>
+              <option value="2">Facebook</option>
+              <option value="3">Amiga(o)</option>
+              <option value="4">Outros</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Qual produto você mais espera?</legend>
+          <label for="definitely-label"
+            >Árvores<input
+              checked
+              name="recommend"
+              id="definitely-label"
+              type="radio"
+          /></label>
+          <label for="maybe-label"
+            >Guirlandas<input name="recommend" id="maybe-label" type="radio"
+          /></label>
+          <label for="not-label"
+            >Laços<input name="recommend" id="not-label" type="radio"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Qual cor(es) você mais gosta?</legend>
+          <label for="red"
+            >Vermelho<input type="checkbox" name="cores" id="red"
+          /></label>
+          <label for="green"
+            >Verde<input type="checkbox" name="cores" id="green"
+          /></label>
+          <label for="white"
+            >Branco<input type="checkbox" name="cores" id="white"
+          /></label>
+          <label for="blue"
+            >Azul<input type="checkbox" name="cores" id="blue"
+          /></label>
+          <label for="others"
+            >Outras<input type="checkbox" name="cores" id="others"
+          /></label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
