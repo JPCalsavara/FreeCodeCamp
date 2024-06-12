@@ -15,26 +15,26 @@
       </p>
       <form id="survey-form" action="">
         <fieldset>
-          <label for="name-label"
+          <label for="name" id="name-label"
             >Nome<input
               class="full"
-              id="name-label"
+              id="name"
               type="text"
               placeholder="Maria da Silva"
               required
           /></label>
-          <label for="email-label"
+          <label for="email" id="email-label"
             >Email<input
               class="full"
-              id="email-label"
+              id="email"
               type="email"
               placeholder="mariasilva@gmail.com"
               required
           /></label>
-          <label for="number-label"
+          <label for="number" id="number-label"
             >Idade(opcional)<input
               class="full"
-              id="number-label"
+              id="number"
               min="13"
               max="115"
               placeholder="27"
@@ -58,37 +58,43 @@
           <legend>Qual produto você mais espera?</legend>
           <label for="definitely-label"
             >Árvores<input
+            value="produto"
               checked
               name="recommend"
               id="definitely-label"
               type="radio"
           /></label>
           <label for="maybe-label"
-            >Guirlandas<input name="recommend" id="maybe-label" type="radio"
+            >Guirlandas<input name="recommend" id="maybe-label" type="radio" value="produto"
           /></label>
           <label for="not-label"
-            >Laços<input name="recommend" id="not-label" type="radio"
+            >Laços<input name="recommend" id="not-label" type="radio" value="produto"
           /></label>
         </fieldset>
         <fieldset>
           <legend>Qual cor(es) você mais gosta?</legend>
           <label for="red"
-            >Vermelho<input type="checkbox" name="cores" id="red"
+            >Vermelho<input type="checkbox" name="cores" id="red" value="red"
           /></label>
           <label for="green"
-            >Verde<input type="checkbox" name="cores" id="green"
+            >Verde<input type="checkbox" name="cores" id="green" value="green"
           /></label>
           <label for="white"
-            >Branco<input type="checkbox" name="cores" id="white"
+            >Branco<input type="checkbox" name="cores" id="white" value="white"
           /></label>
           <label for="blue"
-            >Azul<input type="checkbox" name="cores" id="blue"
+            >Azul<input type="checkbox" name="cores" id="blue" value="blue"
           /></label>
           <label for="others"
-            >Outras<input type="checkbox" name="cores" id="others"
+            >Outras<input type="checkbox" name="cores" id="others" value="others"
           /></label>
         </fieldset>
-        <input type="submit" value="Submit" />
+        <fieldset>
+          <label for="bio">Qual é a sua decoração do sonhos :
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Uma árvore rosa com branco com pugs"></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit"/>
       </form>
     </main>
   </body>

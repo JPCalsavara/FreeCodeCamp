@@ -47,7 +47,8 @@ label {
 
 input,
 select,
-label {
+label,
+textarea{
     margin: 10px 0;
     min-height: 2em;
     vertical-align: middle;
@@ -63,6 +64,7 @@ input[type="submit"] {
     background-color: white;
     border-color: white;
     min-width: 300px;
+    
 }
 
 fieldset {
