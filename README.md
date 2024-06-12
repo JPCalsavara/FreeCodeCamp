@@ -1,2 +1,7 @@
 # FreeCodeCamp
- All the study codes of FreeCodeCamp Frontend Course
+ Estudos pelo site FreeCodeCamp
+ Linguagens
+ - CSS
+ - HTML
+ - JavaScript
+
